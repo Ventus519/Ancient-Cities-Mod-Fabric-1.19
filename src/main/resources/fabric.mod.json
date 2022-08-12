@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "nether_and_end",
+  "version": "${version}",
+
+  "name": "Nether and End Mod",
+  "description": "Ancient Cities and Blocks in nether and end",
+  "authors": [
+    "Ven519"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.ven519.nether_and_end.NetherAndEnd"
+    ]
+  },
+  "mixins": [
+    "nether_and_end.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
